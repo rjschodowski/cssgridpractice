@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+html, body {
+  background-color: #ffeead;
+  height: 100%;
+  margin: 10px;
+}
+
+.grid-container > div:nth-child(1n) {
+  background-color: #96ceb4;  
+}
+
+.grid-container > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.grid-container > div:nth-child(2n) {
+      background-color: #ff6f69;
+}
+
+.grid-container > div:nth-child(4n) {
+      background-color: #ffcc5c;
+}
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 150px auto 150px;
+  grid-template-areas: 
+      "l l h h h h h h h h h h"
+      "c c c c c c c c c c c c"
+      "f f f f f f f f f f f f";
+ 
+}
+
+.grid-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: black;
+}
+
+.logo {
+  grid-area: l;
+  
+ } 
+.header {
+  grid-area: h;
+}
+.content {
+  grid-area: c;
+}
+
+.footer {
+  grid-area: f;
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="logo">LOGO</div> 
+  <div class="header">HEADER</div>
+  <div class="content">CONTENT</div>
+  <div class="footer">FOOTER</div> 
+</div>
+
+</body>
+</html>
