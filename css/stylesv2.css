@@ -1,0 +1,117 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	background-color: midnightblue;
+}
+
+.logo {
+	display: block;
+	height: 80px;
+}
+
+  ul {
+  	list-style-type: none;
+  	margin: 0;
+    padding: 0;
+  }
+
+button {
+  		margin-top: 1.5rem;
+  }
+
+label, a, .featured-article-body {
+	color: white;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.featured-article-body > h1 {
+	text-shadow: 2px 2px 2px black; 
+}
+
+.main-nav-full {
+	display: none;
+}
+
+.menu {
+
+}
+
+.footer {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	margin-top: 10.5rem;
+	background-color: gray;
+}
+
+.footer ul {
+ 	list-style: none;
+ 	padding: 0;
+}
+
+@media screen and (max-width: 900px) {
+.grid-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.header {
+  	display: flex;
+  	flex-direction: column;
+  }
+
+.menu-mobile-site {
+	background-color: green;
+}
+
+}
+
+@media screen and (min-width: 901px) {
+
+.grid-container {
+	height: 100%;
+	display: grid;
+}
+
+.hero-image {
+  background-image: url('../img/heroimage1.png');
+  background-color: #cccccc;
+  background-position: bottom bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  }
+
+.featured-article {
+	text-align: right;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20rem;
+	background-color: gray;
+}
+}
